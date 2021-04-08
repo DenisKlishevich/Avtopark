@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5ACB0290-D2C9-48BE-964E-037C05C4484D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoPark</RootNamespace>
+    <AssemblyName>AutoPark</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\truck+.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frGL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frGL.Designer.cs">
+      <DependentUpon>frGL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frPost.Designer.cs">
+      <DependentUpon>frPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frPostAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frPostAdd.Designer.cs">
+      <DependentUpon>frPostAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frPotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frPotr.Designer.cs">
+      <DependentUpon>frPotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frPotrAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frPotrAdd.Designer.cs">
+      <DependentUpon>frPotrAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frPrixod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frPrixod.Designer.cs">
+      <DependentUpon>frPrixod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frPrixodAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frPrixodAdd.Designer.cs">
+      <DependentUpon>frPrixodAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frRasxod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frRasxod.Designer.cs">
+      <DependentUpon>frRasxod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frRasxodAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frRasxodAdd.Designer.cs">
+      <DependentUpon>frRasxodAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frRest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frRest.Designer.cs">
+      <DependentUpon>frRest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frStrax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frStrax.Designer.cs">
+      <DependentUpon>frStrax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frStraxAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frStraxAdd.Designer.cs">
+      <DependentUpon>frStraxAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frTex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frTex.Designer.cs">
+      <DependentUpon>frTex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frTovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frTovar.Designer.cs">
+      <DependentUpon>frTovar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frTovarAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frTovarAdd.Designer.cs">
+      <DependentUpon>frTovarAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="postDataSet.cs">
+      <DependentUpon>postDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="postDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>postDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="potrDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>potrDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rasxodDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rasxodDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="restDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>restDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="texDataSet.cs">
+      <DependentUpon>texDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="texDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>texDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StraxDataSet.cs">
+      <DependentUpon>StraxDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StraxDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StraxDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tovarDataSet.cs">
+      <DependentUpon>tovarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tovarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tovarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vprixodDataSet.cs">
+      <DependentUpon>vprixodDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vprixodDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vprixodDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frGL.resx">
+      <DependentUpon>frGL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frPost.resx">
+      <DependentUpon>frPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frPostAdd.resx">
+      <DependentUpon>frPostAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frPotr.resx">
+      <DependentUpon>frPotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frPotrAdd.resx">
+      <DependentUpon>frPotrAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frPrixod.resx">
+      <DependentUpon>frPrixod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frPrixodAdd.resx">
+      <DependentUpon>frPrixodAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frRasxod.resx">
+      <DependentUpon>frRasxod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frRasxodAdd.resx">
+      <DependentUpon>frRasxodAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frRest.resx">
+      <DependentUpon>frRest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frStrax.resx">
+      <DependentUpon>frStrax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frStraxAdd.resx">
+      <DependentUpon>frStraxAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frTex.resx">
+      <DependentUpon>frTex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frTovar.resx">
+      <DependentUpon>frTovar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frTovarAdd.resx">
+      <DependentUpon>frTovarAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="postDataSet.xsc">
+      <DependentUpon>postDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="postDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>postDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="postDataSet.xss">
+      <DependentUpon>postDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="potrDataSet.xsc">
+      <DependentUpon>potrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="potrDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>potrDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="potrDataSet.xss">
+      <DependentUpon>potrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="rasxodDataSet.xsc">
+      <DependentUpon>rasxodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="rasxodDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rasxodDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rasxodDataSet.xss">
+      <DependentUpon>rasxodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="restDataSet.xsc">
+      <DependentUpon>restDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="restDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>restDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="restDataSet.xss">
+      <DependentUpon>restDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="texDataSet.xsc">
+      <DependentUpon>texDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="texDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>texDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="texDataSet.xss">
+      <DependentUpon>texDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StraxDataSet.xsc">
+      <DependentUpon>StraxDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StraxDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StraxDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StraxDataSet.xss">
+      <DependentUpon>StraxDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tovarDataSet.xsc">
+      <DependentUpon>tovarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tovarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tovarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tovarDataSet.xss">
+      <DependentUpon>tovarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="vprixodDataSet.xsc">
+      <DependentUpon>vprixodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="vprixodDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vprixodDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vprixodDataSet.xss">
+      <DependentUpon>vprixodDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconAuto.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Auto.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck+.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
